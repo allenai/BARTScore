@@ -62,6 +62,8 @@ class SUMStat:
                     
                     # TODO: From the original BARTScore code, not clear what it is checking
                     if len(set(X[-1])) == 1 or len(set(Z[-1])) == 1:
+                        del X[-1]
+                        del Z[-1]
                         continue
     
                 # System-level correlations
